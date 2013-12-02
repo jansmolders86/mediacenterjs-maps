@@ -21,17 +21,7 @@ exports.engine = 'jade';
 
 // Render the indexpage
 exports.index = function(req, res, next){
-
-var fs = require('fs')
-, config = require('../../lib/handlers/configuration-handler').getConfiguration()
-
-exports.index = function(req, res){
-	res.render('maps', { 
-		location: config.location 
-	});
-};
-
-	
+    res.render('maps');
 };
 
 

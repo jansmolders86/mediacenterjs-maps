@@ -5,16 +5,20 @@ html(lang="en")
 		link(rel='stylesheet', href='/core/css/style.css')
 		script(src="/core/js/jquery-1.8.2.min.js")
 		script(src="/core/js/jquery.mcjs.core.js")
-			// App specific
-		link(rel='stylesheet', href='/mediacenterjs-maps/public/css/style.css')
-			title Maps
-			script.
-			$(function(){	
-			});
+		// App specific
+		script(src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false")
+		script(src="/maps/js/jquery.maps.js")
+		link(rel='stylesheet', href='/maps/css/style.css')
+		title Maps
 	body
 		#header
 			a.backlink(href="/")
 				img(src="/core/icons/back.png")
 			h1 Maps	
-		#wrapper
-			
+		#map-canvas	
+		#routebox
+			.row.mcjs-rc-controllable
+				input#departure.mcjs-rc-clickable(type="text",placeholder="Departure",onchange="calcRoute();")
+			.row.mcjs-rc-controllable
+				input#arrival.mcjs-rc-clickable(type="text",placeholder="Arrival",onchange="calcRoute();")
+			#directions-panel
