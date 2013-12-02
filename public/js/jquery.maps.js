@@ -35,7 +35,7 @@ function openWindowInfo(){
 
 
 function getLatLngBasedOnAddress(data) {
-    var markerIcon = '/maps/css/img/marker.png';
+    var markerIcon = '/mediacenterjs-maps/public/css/img/marker.png';
     var address = data.location;
     var bounds = new google.maps.LatLngBounds();
     geocoder.geocode({ 'address': address}, function(results, status) {
