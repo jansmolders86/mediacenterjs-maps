@@ -3,7 +3,7 @@ var directionsService = new google.maps.DirectionsService();
 
 function initialize() {
 	var mapOptions = {
-		zoom:7,
+		zoom:8,
 		center: new google.maps.LatLng(52.2, 5),
 		mapTypeId: google.maps.MapTypeId.ROADMAP
 	}
@@ -48,7 +48,7 @@ function getLatLngBasedOnAddress(data) {
             });
             bounds.extend(latLng);
             
-            map.fitBounds(bounds);
+           // map.fitBounds(bounds);
             map.panToBounds(bounds);
             
             google.maps.event.addListener(geoMarker, 'click', openWindowInfo);
