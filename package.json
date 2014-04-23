@@ -6,7 +6,11 @@
 		"name": "Jan Smolders",
 		"email": "jansmolders86@gmail.com"
 	},
-	"version": "0.0.4",
+	"version": "0.0.5",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/jansmolders86/mediacenterjs-soccer.git"
+    },
 	"peerDependencies": {
 		"mediacenterjs": "*"
 	},
