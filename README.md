@@ -1,0 +1,1 @@
+A google maps plugin for mediacenterJS
