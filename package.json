@@ -7,10 +7,6 @@
 		"email": "jansmolders86@gmail.com"
 	},
 	"version": "0.0.6",
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/jansmolders86/mediacenterjs-maps.git"
-    },
 	"peerDependencies": {
 		"mediacenterjs": "*"
 	},
